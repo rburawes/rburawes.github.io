@@ -10,7 +10,7 @@ Requirements:
 
 Steps:
 
-1. If you haven't installed Spring ROO yet, then download it [here] (http://projects.spring.io/spring-roo/).
+1. If you haven't installed Spring ROO yet, then download it here http://projects.spring.io/spring-roo.
 2. Extract it to your favorite directory and add it to your PATH system variable.
 
 
