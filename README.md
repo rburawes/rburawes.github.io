@@ -108,7 +108,7 @@ Steps:
 6.	Open your ROO shell by typing <b>roo</b> on your console.
 
 	```
-		dbresample $ roo
+	dbresample $ roo
 	    ____  ____  ____  
 	   / __ \/ __ \/ __ \ 
 	  / /_/ / / / / / / / 
