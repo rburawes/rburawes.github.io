@@ -105,8 +105,4 @@ Steps:
 	```
 
 5.	On your machine create a new directory for your project e.g. <b>dbresample</b> then go to that newly created folder.
-<<<<<<< HEAD
 6.	Open your ROO shell by typing <b>roo</b> on your console.
-=======
-6.	Open your ROO shell by typing <b>roo</b> on your console.
->>>>>>> c40d53b41af7bab110ea1970b18b92c4f843cea6
