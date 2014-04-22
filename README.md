@@ -11,7 +11,7 @@ Requirements:
 Steps:
 
 1.	If you haven't installed Spring ROO yet, then download it here http://projects.spring.io/spring-roo. 	
-2.	Extract it to your favorite directory and add it to your PATH system variable.  In OSX you can add PATH in .profile at your home directory.
+2.	Extract it to your favorite directory and add it to your PATH system variable.  In OSX you can add PATH in <b>.profile<b> at your home directory.
 	
 	```
 	export ROO_HOME="/Users/<your-home-directory>/spring-roo-1.2.5.RELEASE"
@@ -106,3 +106,16 @@ Steps:
 
 5.	On your machine create a new directory for your project e.g. <b>dbresample</b> then go to that newly created folder.
 6.	Open your ROO shell by typing <b>roo</b> on your console.
+
+	```
+	dbresample $ roo
+	    ____  ____  ____  
+	   / __ \/ __ \/ __ \ 
+	  / /_/ / / / / / / / 
+	 / _, _/ /_/ / /_/ /  
+	/_/ |_|\____/\____/    1.2.5.RELEASE [rev 8341dc2]
+	
+	
+	Welcome to Spring Roo. For assistance press TAB or type "hint" then hit ENTER.
+	roo>
+	```
