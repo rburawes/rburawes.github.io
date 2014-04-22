@@ -1,24 +1,4 @@
-DB Reverse Engineering
-==================
-
-This a quick tutorial on how create your application using one of the very impressive feature of Spring ROO, the DBRE.  In fact, this feature is not new for most of the developers.  JPA offers this but only allows you to instrospect the db schema and produce Java application once while Roo's version gives you the advantage of repeatedly doing it (re-instrospect and update the application).  Here, we are gonna create a sample project to demonstrate how DBRE works.
-
-Requirements:
-
-1. PostgreSQL
-2. Spring ROO, latest version is 1.2.5
-
-Steps:
-
-1.	If you haven't installed Spring ROO yet, then download it here http://projects.spring.io/spring-roo. 	
-2.	Extract it to your favorite directory and add it to your PATH system variable.  In OSX you can add PATH in .profile at your home directory.
-	e.g. 	export ROO_HOME="/Users/rburawes/spring-roo-1.2.5.RELEASE"
-			export PATH="$PATH:$ROO_HOME/bin"			
-3.	Download and install PostgreSQL. http://www.postgresql.org/download
-4.	Use the sql below to create your sample database.
-
-```
--- Table: account
+﻿-- Table: account
 
 DROP TABLE IF EXISTS account;
 DROP TABLE IF EXISTS salary;
@@ -101,4 +81,3 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE account_roles OWNER TO postgres;
-```
