@@ -155,7 +155,7 @@ Steps:
 	```
 	roo> addon search jdbc
 	8 found, sorted by rank; T = trusted developer; R = Roo 1.2 compatible
-	ID T R DESCRIPTION -------------------------------------------------------------
+	ID T R DESCRIPTION
 	01 Y Y 1.2.4.0010 #jdbcdriver driverclass:net.sourceforge.jtds.jdbc.Driver.
 	       This bundle wraps the standard Maven artifact: jtds-1.2.4.
 	02 Y Y 5.1.18.0001 #jdbcdriver driverclass:com.mysql.jdbc.Driver. This bundle
@@ -172,7 +172,6 @@ Steps:
 	       the standard Maven artifact: h2-1.3.170.
 	08 Y Y 2.1.6.0020 #jdbcdriver driverclass:org.firebirdsql.jdbc.FBDriver. This
 	       bundle wraps the standard Maven artifact: firebird-2.1.6.
-	--------------------------------------------------------------------------------
 	```
 	
 	Run the commands again on step 7.
