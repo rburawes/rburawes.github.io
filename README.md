@@ -121,13 +121,60 @@ Steps:
 		--password <your-db-password> 
 	roo> database introspect --schema public 
 	roo> database reverse engineer --schema public --package ~.domain --activeRecord
-	```	
+	```
+	Succesful execution of the above commands will produce the following output in your shell.
+	
+	```
+	roo> database reverse engineer --schema public --package ~.domain --activeRecord
+	Created SRC_MAIN_RESOURCES/dbre.xml
+	Created SRC_MAIN_JAVA/com/sample/domain/Account.java
+	Created SRC_MAIN_JAVA/com/sample/domain/Employee.java
+	Created SRC_MAIN_JAVA/com/sample/domain/Salary.java
+	Created SRC_MAIN_JAVA/com/sample/domain/UserRole.java
+	Created SRC_MAIN_JAVA/com/sample/domain/Account_Roo_ToString.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Account_Roo_DbManaged.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Account_Roo_Jpa_Entity.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Employee_Roo_ToString.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Employee_Roo_DbManaged.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Employee_Roo_Jpa_Entity.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Salary_Roo_ToString.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Salary_Roo_DbManaged.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/Salary_Roo_Jpa_Entity.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/UserRole_Roo_ToString.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/UserRole_Roo_DbManaged.aj
+	Created SRC_MAIN_JAVA/com/sample/domain/UserRole_Roo_Jpa_Entity.aj
+	```
 8.	In case that you encounter error about the missing <b>roo addon</b> use these commands to fix it. In this example it will look for <b>jdbc postgresql addon.</b>
 
 	```
 	roo> addon search jdbc
 	roo> addon install id --searchResultId <ID of the addon>
 	```
+	Example:
+	
+	```
+	roo> addon search jdbc
+	8 found, sorted by rank; T = trusted developer; R = Roo 1.2 compatible
+	ID T R DESCRIPTION -------------------------------------------------------------
+	01 Y Y 1.2.4.0010 #jdbcdriver driverclass:net.sourceforge.jtds.jdbc.Driver.
+	       This bundle wraps the standard Maven artifact: jtds-1.2.4.
+	02 Y Y 5.1.18.0001 #jdbcdriver driverclass:com.mysql.jdbc.Driver. This bundle
+	       wraps the standard Maven artifact: mysql-connector-java-5.1.18.
+	03 Y Y 10.8.2.2_0001 Derby Client #jdbcdriver
+	       driverclass:org.apache.derby.jdbc.ClientDriver. This bundle wraps the...
+	04 Y Y 6.7.0.0010 #jdbcdriver driverclass:com.ibm.as400.access.AS400JDBCDriver.
+	       This bundle wraps the standard Maven artifact: jtopen-6.7.
+	05 Y Y 10.8.2.2_0001 Derby #jdbcdriver
+	       driverclass:org.apache.derby.jdbc.EmbeddedDriver. This bundle wraps...
+	06 Y Y 9.1.0.901_0001 Postgres #jdbcdriver driverclass:org.postgresql.Driver.
+	       This bundle wraps the standard Maven artifact:...
+	07 Y Y 1.3.170.0001 H2 #jdbcdriver driverclass:org.h2.Driver. This bundle wraps
+	       the standard Maven artifact: h2-1.3.170.
+	08 Y Y 2.1.6.0020 #jdbcdriver driverclass:org.firebirdsql.jdbc.FBDriver. This
+	       bundle wraps the standard Maven artifact: firebird-2.1.6.
+	--------------------------------------------------------------------------------
+	```
+	
 	Run the commands again on step 7.
 10.	Download or clone the project "dbresample" if you want to see the working sample.
 
