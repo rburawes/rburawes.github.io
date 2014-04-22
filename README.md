@@ -99,5 +99,6 @@ WITH (
 );
 ALTER TABLE account_roles OWNER TO postgres;
 ```
-5.	On your machine create a new directory for your project e.g. dbresample then go to that newly created folder.
+
+5.	On your machine create a new directory for your project e.g. <b>dbresample</b> then go to that newly created folder.
 6.	Open your ROO shell by typing <b>roo</b> on your console.
