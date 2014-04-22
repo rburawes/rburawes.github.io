@@ -18,14 +18,11 @@ Steps:
 4.	Use the sql below to create your sample database.
 
 ```
--- Table: account
-
 DROP TABLE IF EXISTS account;
 DROP TABLE IF EXISTS salary;
 DROP TABLE IF EXISTS employee;
 DROP TABLE IF EXISTS user_role;
 DROP TABLE IF EXISTS account_roles;
-
 
 CREATE TABLE account
 (
@@ -102,3 +99,5 @@ WITH (
 );
 ALTER TABLE account_roles OWNER TO postgres;
 ```
+5.	On your machine create a new directory for your project e.g. dbresample then go to that newly created folder.
+6.	Open your ROO shell by typing <b>roo</b> on your console.
