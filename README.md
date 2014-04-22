@@ -172,6 +172,7 @@ Steps:
 	       the standard Maven artifact: h2-1.3.170.
 	08 Y Y 2.1.6.0020 #jdbcdriver driverclass:org.firebirdsql.jdbc.FBDriver. This
 	       bundle wraps the standard Maven artifact: firebird-2.1.6.
+	roo> addon install id --searchResultId 06
 	```
 	
 	Run the commands again on step 7.
