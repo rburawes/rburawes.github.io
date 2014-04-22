@@ -8,3 +8,4 @@ database reverse engineer --schema public --package ~.domain --activeRecord --re
 database reverse engineer --schema public --package ~.domain --activeRecord
 database reverse engineer --schema public --repository  --package ~.repository
 database reverse engineer --schema public --service  --package ~.service
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-22 09:28:22
