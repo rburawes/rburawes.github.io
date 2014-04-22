@@ -117,7 +117,8 @@ Steps:
 	roo> project --topLevelPackage com.sample
 	roo> jpa setup --database POSTGRES --provider HIBERNATE 
 		--databaseName <name-of-your-db> 
-		--userName <your-db-username> --password <your-db-password> 
+		--userName <your-db-username> 
+		--password <your-db-password> 
 	roo> database introspect --schema public 
 	roo> database reverse engineer --schema public --package ~.domain --activeRecord
 	```	
