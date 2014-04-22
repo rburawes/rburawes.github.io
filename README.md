@@ -23,7 +23,7 @@ Steps:
 5.	Use the sql below to create tables on your db.
 
 	```
-	<b>DROP TABLE IF EXISTS account;
+	DROP TABLE IF EXISTS account;
 	DROP TABLE IF EXISTS salary;
 	DROP TABLE IF EXISTS employee;
 	DROP TABLE IF EXISTS user_role;
@@ -102,7 +102,7 @@ Steps:
 	WITH (
 	  OIDS=FALSE
 	);
-	ALTER TABLE account_roles OWNER TO postgres;</b>
+	ALTER TABLE account_roles OWNER TO postgres;
 	```
 
 5.	On your machine create a new directory for your project e.g. <b>dbresample</b> then go to that newly created folder.
@@ -116,7 +116,8 @@ Steps:
 	```
 	roo> project --topLevelPackage com.sample
 	roo> jpa setup --database POSTGRES --provider HIBERNATE 
-		--databaseName <name-of-your-db> --userName <your-db-username> --password <your-db-password> 
+		--databaseName <name-of-your-db> 
+		--userName <your-db-username> --password <your-db-password> 
 	roo> database introspect --schema public 
 	roo> database reverse engineer --schema public --package ~.domain --activeRecord
 	```	
