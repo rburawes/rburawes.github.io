@@ -115,7 +115,8 @@ Steps:
 
 	```
 	roo> project --topLevelPackage com.sample
-	roo> jpa setup --database POSTGRES --provider HIBERNATE --databaseName <name-of-your-db> --userName <your-db-username> --password <your-db-password> 
+	roo> jpa setup --database POSTGRES --provider HIBERNATE 
+		--databaseName <name-of-your-db> --userName <your-db-username> --password <your-db-password> 
 	roo> database introspect --schema public 
 	roo> database reverse engineer --schema public --package ~.domain --activeRecord
 	```	
@@ -128,6 +129,7 @@ Steps:
 	Run the commands again on step 7.
 10.	Download or clone the project "dbresample" if you want to see the working sample.
 
-==================
+
 <b>Related document(s):</b>
-	http://docs.spring.io/spring-roo/reference/html
+
+http://docs.spring.io/spring-roo/reference/html
