@@ -19,10 +19,11 @@ Steps:
 	```
 		
 3.	Download and install PostgreSQL. http://www.postgresql.org/download
-4.	Use the sql below to create your sample database.
+4.	Using PgAdmin or terminal create a database
+5.	Use the sql below to create tables on your db.
 
 	```
-	DROP TABLE IF EXISTS account;
+	<b>DROP TABLE IF EXISTS account;
 	DROP TABLE IF EXISTS salary;
 	DROP TABLE IF EXISTS employee;
 	DROP TABLE IF EXISTS user_role;
@@ -101,21 +102,31 @@ Steps:
 	WITH (
 	  OIDS=FALSE
 	);
-	ALTER TABLE account_roles OWNER TO postgres;
+	ALTER TABLE account_roles OWNER TO postgres;</b>
 	```
 
 5.	On your machine create a new directory for your project e.g. <b>dbresample</b> then go to that newly created folder.
-6.	Open your ROO shell by typing <b>roo</b> on your console.
+6.	Open your ROO shell by typing <b>roo</b> in your console.
 
 	```
 	dbresample $ roo
-	    ____  ____  ____  
-	   / __ \/ __ \/ __ \ 
-	  / /_/ / / / / / / / 
-	 / _, _/ /_/ / /_/ /  
-	/_/ |_|\____/\____/    1.2.5.RELEASE [rev 8341dc2]
-	
-	
-	Welcome to Spring Roo. For assistance press TAB or type "hint" then hit ENTER.
-	roo>
 	```
+7.	Type the following roo commands in your console.
+
+	```
+	roo> project --topLevelPackage com.sample
+	roo> jpa setup --database POSTGRES --provider HIBERNATE --databaseName <name-of-your-db> --userName <your-db-username> --password <your-db-password> 
+	roo> database introspect --schema public 
+	roo> database reverse engineer --schema public --package ~.domain --activeRecord
+	```	
+8.	In case that you encounter error about missing <b>roo addon</b> use these commands to fix it.
+
+	```
+	roo> addon search jdbc
+	roo> addon install id --searchResultId <ID of the addon>
+	```
+	Run the commands again on step 7.
+10.	Download or clone the project if you want to see the working sample.
+
+Related document(s):
+http://docs.spring.io/spring-roo/reference/html
