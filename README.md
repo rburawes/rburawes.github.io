@@ -119,14 +119,15 @@ Steps:
 	roo> database introspect --schema public 
 	roo> database reverse engineer --schema public --package ~.domain --activeRecord
 	```	
-8.	In case that you encounter error about missing <b>roo addon</b> use these commands to fix it.
+8.	In case that you encounter error about the missing <b>roo addon</b> use these commands to fix it. In this example it will look for <b>jdbc postgresql addon.</b>
 
 	```
 	roo> addon search jdbc
 	roo> addon install id --searchResultId <ID of the addon>
 	```
 	Run the commands again on step 7.
-10.	Download or clone the project if you want to see the working sample.
+10.	Download or clone the project "dbresample" if you want to see the working sample.
 
-Related document(s):
-http://docs.spring.io/spring-roo/reference/html
+==================
+<b>Related document(s):</b>
+	http://docs.spring.io/spring-roo/reference/html
