@@ -14,7 +14,7 @@ Steps:
 2.	Extract it to your favorite directory and add it to your PATH system variable.  In OSX you can add PATH in .profile at your home directory.
 	
 	```
-	export ROO_HOME="/Users/rburawes/spring-roo-1.2.5.RELEASE"
+	export ROO_HOME="/Users/<your-home-directory>/spring-roo-1.2.5.RELEASE"
 	export PATH="$PATH:$ROO_HOME/bin"
 	```
 		
