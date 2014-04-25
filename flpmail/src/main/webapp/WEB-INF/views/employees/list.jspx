@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_io_flp_core_domain_Employee" items="${employees}" z="4W09p90Q0M8bU7Y9rUbhzXWuOoc=">
+        <table:table data="${employees}" id="l_io_flp_core_domain_Employee" path="/employees" z="9r8iLMonNCqKx8EP/b7lQrkPwus=">
+            <table:column id="c_io_flp_core_domain_Employee_salary" property="salary" z="2X3KGsgqmmtwWZahcLVPlq19F/c="/>
+            <table:column id="c_io_flp_core_domain_Employee_address" property="address" z="vwSIMdBS97j+pCiXaGbyUvZYRWY="/>
+            <table:column id="c_io_flp_core_domain_Employee_firstName" property="firstName" z="f/2fGuTmsaNscy5HIAuBt6qNX8Y="/>
+            <table:column id="c_io_flp_core_domain_Employee_lastName" property="lastName" z="3zrrLRXqsiudbTZsPTwBv1CMsX8="/>
+            <table:column id="c_io_flp_core_domain_Employee_middleName" property="middleName" z="84yAGIhC+HdwADniUKyOmBO+pUU="/>
+        </table:table>
+    </page:list>
+</div>

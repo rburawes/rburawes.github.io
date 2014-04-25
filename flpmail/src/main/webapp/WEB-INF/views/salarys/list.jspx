@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_io_flp_core_domain_Salary" items="${salarys}" z="HhwLuMYa9sf2Pk9cFEctzzc5k1c=">
+        <table:table data="${salarys}" id="l_io_flp_core_domain_Salary" path="/salarys" z="HN+SztcIT2SHWWLL1zBPxPyhZ0Q=">
+            <table:column id="c_io_flp_core_domain_Salary_code" property="code" z="JFJZOES6NfVioY+g/IODobmiHhE="/>
+            <table:column id="c_io_flp_core_domain_Salary_description" property="description" z="HiSzAWzT80ti14h49+sux3W7URg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_io_flp_core_domain_Account" items="${accounts}" z="cOY1W7Y9Fg18pyGHKO9hHh9q2WQ=">
+        <table:table data="${accounts}" id="l_io_flp_core_domain_Account" path="/accounts" z="/vkwnCP0xOIhGbHvjLFWkBetzAo=">
+            <table:column id="c_io_flp_core_domain_Account_userRoles" property="userRoles" z="mmzgZMf91Hw2bAvGrdjEESwCRUg="/>
+            <table:column id="c_io_flp_core_domain_Account_enabled" property="enabled" z="2A6b9914s14uvIPuSsLpZ91AIog="/>
+            <table:column id="c_io_flp_core_domain_Account_password" property="password" z="VNkbvK3w8HyL9MDcqX7Ek1OL1Gs="/>
+            <table:column id="c_io_flp_core_domain_Account_username" property="username" z="WArrSWXSerj2KEJ2FB1WSZX6PP4="/>
+        </table:table>
+    </page:list>
+</div>

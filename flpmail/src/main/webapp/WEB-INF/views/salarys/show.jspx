@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_io_flp_core_domain_Salary" object="${salary}" path="/salarys" z="hzbIQO95dDZFo1yRRH89l/aEurs=">
+        <field:display field="code" id="s_io_flp_core_domain_Salary_code" object="${salary}" z="tIG78v1xwkqLN29cpJdr5HYF37w="/>
+        <field:display field="description" id="s_io_flp_core_domain_Salary_description" object="${salary}" z="J/lZi9BMBaAMGp2ExC9j6H70FTo="/>
+    </page:show>
+</div>

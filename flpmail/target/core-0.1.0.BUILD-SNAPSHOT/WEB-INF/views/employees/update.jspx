@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_io_flp_core_domain_Employee" modelAttribute="employee" path="/employees" versionField="Version" z="cBAb7g2IyMl6/+M9qBCvIWqOs/s=">
+        <field:select field="salary" id="c_io_flp_core_domain_Employee_salary" itemValue="id" items="${salarys}" path="/salarys" z="tu+aUyb9O2duPQ/m9JhE7C/CRPs="/>
+        <field:input field="address" id="c_io_flp_core_domain_Employee_address" required="true" z="wVFUt524grHsv37ytNpPlriyOT4="/>
+        <field:input field="firstName" id="c_io_flp_core_domain_Employee_firstName" required="true" z="SzgbuzboT6ZdtGWiCZC4CKiywgs="/>
+        <field:input field="lastName" id="c_io_flp_core_domain_Employee_lastName" required="true" z="hsQOKJ8oUKVcMjLpTSA+8lsLZtQ="/>
+        <field:input field="middleName" id="c_io_flp_core_domain_Employee_middleName" required="true" z="maFzPB6KkK3xRsZeK8u4/5wFWLs="/>
+    </form:update>
+</div>

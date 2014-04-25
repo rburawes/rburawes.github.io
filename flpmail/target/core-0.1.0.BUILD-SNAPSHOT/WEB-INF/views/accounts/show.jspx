@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_io_flp_core_domain_Account" object="${account}" path="/accounts" z="OU8Annz8KBJuf2+ft6DtNiusGsA=">
+        <field:display field="userRoles" id="s_io_flp_core_domain_Account_userRoles" object="${account}" z="G98bkRuj3hbKOWjzkFy7RGxH8nc="/>
+        <field:display field="enabled" id="s_io_flp_core_domain_Account_enabled" object="${account}" z="hji33S8j20RJ6cIul56/0EVcUNc="/>
+        <field:display field="password" id="s_io_flp_core_domain_Account_password" object="${account}" z="DiQauvYdoo2Qu9ZysRjdtyKGioI="/>
+        <field:display field="username" id="s_io_flp_core_domain_Account_username" object="${account}" z="R5DXXXQQl19Qmc+FXwpvwtExKOo="/>
+    </page:show>
+</div>

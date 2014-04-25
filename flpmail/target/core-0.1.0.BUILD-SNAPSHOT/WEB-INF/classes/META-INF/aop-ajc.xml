@@ -1,0 +1,46 @@
+<aspectj>
+<aspects>
+<aspect name="io.flp.core.domain.UserRole_Roo_Jpa_ActiveRecord"/>
+<aspect name="io.flp.core.web.EmployeeController_Roo_Controller"/>
+<aspect name="io.flp.core.service.EmployeeServiceImpl_Roo_Service"/>
+<aspect name="io.flp.core.web.SalaryController_Roo_Controller"/>
+<aspect name="io.flp.core.domain.Account_Roo_ToString"/>
+<aspect name="io.flp.core.domain.UserRole_Roo_DbManaged"/>
+<aspect name="io.flp.core.domain.UserRole_Roo_Jpa_Entity"/>
+<aspect name="io.flp.core.service.SalaryService_Roo_Service"/>
+<aspect name="io.flp.core.domain.Account_Roo_DbManaged"/>
+<aspect name="io.flp.core.service.EmployeeService_Roo_Service"/>
+<aspect name="io.flp.core.domain.Employee_Roo_DbManaged"/>
+<aspect name="io.flp.core.domain.Account_Roo_Configurable"/>
+<aspect name="io.flp.core.service.UserRoleServiceImpl_Roo_Service"/>
+<aspect name="io.flp.core.service.AccountServiceImpl_Roo_Service"/>
+<aspect name="io.flp.core.repository.SalaryRepository_Roo_Jpa_Repository"/>
+<aspect name="io.flp.core.service.AccountService_Roo_Service"/>
+<aspect name="io.flp.core.domain.Salary_Roo_DbManaged"/>
+<aspect name="io.flp.core.domain.Employee_Roo_Jpa_Entity"/>
+<aspect name="io.flp.core.domain.UserRole_Roo_ToString"/>
+<aspect name="io.flp.core.domain.Account_Roo_Jpa_ActiveRecord"/>
+<aspect name="io.flp.core.domain.Salary_Roo_Configurable"/>
+<aspect name="io.flp.core.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="io.flp.core.domain.Salary_Roo_Json"/>
+<aspect name="io.flp.core.domain.UserRole_Roo_Configurable"/>
+<aspect name="io.flp.core.domain.Account_Roo_Json"/>
+<aspect name="io.flp.core.domain.Employee_Roo_ToString"/>
+<aspect name="io.flp.core.domain.Employee_Roo_Json"/>
+<aspect name="io.flp.core.domain.Salary_Roo_Jpa_ActiveRecord"/>
+<aspect name="io.flp.core.domain.Employee_Roo_Jpa_ActiveRecord"/>
+<aspect name="io.flp.core.domain.Account_Roo_Jpa_Entity"/>
+<aspect name="io.flp.core.service.SalaryServiceImpl_Roo_Service"/>
+<aspect name="io.flp.core.domain.UserRole_Roo_Json"/>
+<aspect name="io.flp.core.repository.UserRoleRepository_Roo_Jpa_Repository"/>
+<aspect name="io.flp.core.domain.Salary_Roo_Jpa_Entity"/>
+<aspect name="io.flp.core.service.UserRoleService_Roo_Service"/>
+<aspect name="io.flp.core.domain.Salary_Roo_ToString"/>
+<aspect name="io.flp.core.web.AccountController_Roo_Controller"/>
+<aspect name="io.flp.core.web.UserRoleController_Roo_Controller"/>
+<aspect name="io.flp.core.repository.AccountRepository_Roo_Jpa_Repository"/>
+<aspect name="io.flp.core.domain.Employee_Roo_Configurable"/>
+<aspect name="io.flp.core.repository.EmployeeRepository_Roo_Jpa_Repository"/>
+</aspects>
+</aspectj>
+

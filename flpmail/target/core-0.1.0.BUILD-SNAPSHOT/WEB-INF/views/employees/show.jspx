@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_io_flp_core_domain_Employee" object="${employee}" path="/employees" z="Z8/VXNfQUdO2a6//ELyuLmQ+3Fo=">
+        <field:display field="salary" id="s_io_flp_core_domain_Employee_salary" object="${employee}" z="cAr/yBH59rqQEZ26GgBJzOIr41g="/>
+        <field:display field="address" id="s_io_flp_core_domain_Employee_address" object="${employee}" z="XQMulN7sDdJkJISlbjjgdjPMdmY="/>
+        <field:display field="firstName" id="s_io_flp_core_domain_Employee_firstName" object="${employee}" z="s87I7DYT7pdrTys8S4zDX5IvhRE="/>
+        <field:display field="lastName" id="s_io_flp_core_domain_Employee_lastName" object="${employee}" z="DcF+Wo+qA2vH+BeARPRDF3/3DYU="/>
+        <field:display field="middleName" id="s_io_flp_core_domain_Employee_middleName" object="${employee}" z="tir+CzbGZPaD0wC94TJDqBNuPHw="/>
+    </page:show>
+</div>

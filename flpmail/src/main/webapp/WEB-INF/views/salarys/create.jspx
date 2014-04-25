@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_io_flp_core_domain_Salary" modelAttribute="salary" path="/salarys" render="${empty dependencies}" z="i8NNvi/KojWlRxF6/i4keHtAvtY=">
+        <field:simple field="employees" id="c_io_flp_core_domain_Salary_employees" messageCode="entity_reference_not_managed" messageCodeAttribute="Employee" z="5NEZyPR+8NA7oxrsGzI+sTiwv+E="/>
+        <field:input field="code" id="c_io_flp_core_domain_Salary_code" required="true" z="1eOf7Lwx7++vlD/PQ1Dt8pJMyDQ="/>
+        <field:input field="description" id="c_io_flp_core_domain_Salary_description" z="htfzUT56JfYDGa82dHilZhbT5Y8="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_io_flp_core_domain_Salary" render="${not empty dependencies}" z="BcIREO5FOVHkApMVaLq4HcLn004="/>
+</div>

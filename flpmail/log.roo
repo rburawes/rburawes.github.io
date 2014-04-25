@@ -1,0 +1,32 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-25 12:30:47
+project --topLevelPackage io.flp.core
+jpa setup --database POSTGRES --provider HIBERNATE --databaseName flpsystems --userName postgres --password postgres
+database introspect --schema public 
+database reverse engineer --schema public --package ~.domain
+json all
+repository jpa --interface ~.repository.SalaryRepository --entity ~.domain.Salary
+repository jpa --interface ~.repository.EmployeeRepository --entity ~.domain.Employee
+repository jpa --interface ~.repository.AccountRepository --entity ~.domain.Account
+repository jpa --interface ~.repository.UserRoleRepository --entity ~.domain.UserRole
+service all --interfacePackage ~.service
+web mvc setup
+web mvc all --package ~.web
+security setup
+jms setup --provider ACTIVEMQ_IN_MEMORY --destinationType TOPIC --destinationName jms.topic.EmployeeUpdateAlerts
+focus --class ~.web.EmployeeController
+field jms template
+jms listener class --class ~.messaging.JMSEmployeeUpdateTopicListener --destinationType TOPIC --destinationName jms.topic.EmployeeUpdateAlerts
+logging setup --level INFO 
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-04-25 12:41:38
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-25 14:33:21
+interface --class ~.email.NotificationService
+class --class ~.email.NotificationServiceImpl
+email sender setup --hostServer smtp.gmail.com --protocol SMTP --port 587 --username rburawes@gmail.com --password ironkittens1981
+properties list --name email.properties --path SPRING_CONFIG_ROOT
+email template setup --from rburawes@gmail.com --subject "Employee Update"
+field email template --fieldName mailTemplate --class ~.email.NotificationServiceImpl
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-04-25 14:37:36
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-25 14:45:31
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-04-25 15:15:59
