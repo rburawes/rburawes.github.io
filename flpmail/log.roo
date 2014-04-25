@@ -22,7 +22,7 @@ exit
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-04-25 14:33:21
 interface --class ~.email.NotificationService
 class --class ~.email.NotificationServiceImpl
-email sender setup --hostServer smtp.gmail.com --protocol SMTP --port 587 --username rburawes@gmail.com --password ironkittens1981
+email sender setup --hostServer smtp.gmail.com --protocol SMTP --port 587 --username rburawes@gmail.com --password password
 properties list --name email.properties --path SPRING_CONFIG_ROOT
 email template setup --from rburawes@gmail.com --subject "Employee Update"
 field email template --fieldName mailTemplate --class ~.email.NotificationServiceImpl
